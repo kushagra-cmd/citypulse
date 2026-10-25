@@ -1,0 +1,40 @@
+{
+  "name": "citypulse",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CityPulse — Your city. Your voice. Your priorities. Full-stack civic-tech platform backed by Supabase, PostgreSQL RLS, and MapLibre GL JS.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build.mjs",
+    "build:vite": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "node tests/run_tests.mjs && python3 tests/sql_rls_verifier.py",
+    "test:unit": "node tests/run_tests.mjs",
+    "test:sql": "python3 tests/sql_rls_verifier.py"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@supabase/supabase-js": "^2.45.4",
+    "@tanstack/react-query": "^5.56.2",
+    "lucide-react": "^0.446.0",
+    "maplibre-gl": "^4.7.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
+    "react-router-dom": "^6.26.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.1"
+  }
+}
